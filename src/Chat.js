@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import ChatInput from './ChatInput'
 import ChatMessage from './ChatMessage'
 
-const URL = 'ws://localhost:3030'
+//const URL = 'ws://localhost:3030'
+const URL = 'wss://echo.websocket.org'
 
 class Chat extends Component {
   state = {
