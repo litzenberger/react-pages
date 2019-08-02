@@ -4,10 +4,12 @@
   "private": true,
   "homepage": "https://litzenberger.github.io/react-pages",
   "dependencies": {
-    "gh-pages": "^2.1.0",
+    "gh-pages": "^2.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "ws": "^7.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
