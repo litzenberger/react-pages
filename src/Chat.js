@@ -3,7 +3,8 @@ import ChatInput from './ChatInput'
 import ChatMessage from './ChatMessage'
 
 //const URL = 'ws://localhost:3030'
-const URL = 'wss://echo.websocket.org'
+const URL = 'ws://localhost:8080/file'
+//const URL = 'wss://echo.websocket.org'
 
 class Chat extends Component {
   state = {
