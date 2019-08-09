@@ -3,12 +3,12 @@ import ChatInput from './ChatInput'
 import ChatMessage from './ChatMessage'
 
 //const URL = 'ws://localhost:3030'
-const URL = 'ws://localhost:8080/file'
+const URL = 'ws://localhost:8080/system'
 //const URL = 'wss://echo.websocket.org'
 
 class Chat extends Component {
   state = {
-    name: 'Bob',
+    name: 'System',
     messages: [],
   }
 
@@ -48,16 +48,6 @@ class Chat extends Component {
   render() {
     return (
       <div>
-        <label htmlFor="name">
-          Name:&nbsp;
-          <input
-            type="text"
-            id={'name'}
-            placeholder={'Enter your name...'}
-            value={this.state.name}
-            onChange={e => this.setState({ name: e.target.value })}
-          />
-        </label>
         <ChatInput
           ws={this.ws}
           onSubmitMessage={messageString => this.submitMessage(messageString)}
